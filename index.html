@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+<body class="flex flex-col justify-center items-center ml-6 mr-6">
+    <h1 class="-mt-10 mb-20 text-5xl font-light">welcome to swiper js</h1>
+    <!-- Swiper -->
+    <div class="swiper mySwiper ">
+      <div class="swiper-wrapper ">
+        <div class="swiper-slide"><img src="img/banner3.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/banner4.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/delta.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/feature_3.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/image2.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/image3.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/nokia-air.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/nokia.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/one.png" alt=""></div>
+      </div>
+      <div class="swiper-button-next "></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        1500:{
+             slidesPerView: 3,
+        },
+        700:{
+            slidesPerView: 2,
+        },
+      },
+      });
+    </script>
+  </body>
+</html>
